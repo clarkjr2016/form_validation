@@ -16,32 +16,25 @@
           type="email"
           id="email"
           name="email"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          required
+          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
         />
-        <span class="error"></span>
+        <span class="message"></span>
       </div>
       <!--EMAIL-->
 
       <!--COUNTRY-->
       <div class="input_wrapper">
         <label for="country">Country:</label>
-        <input
-          type="text"
-          id="country"
-          name="country"
-          pattern="^[A-Z]{2}$"
-          required
-        />
-        <span class="error"></span>
+        <input type="text" id="country" name="country" pattern="^[A-Z]{2}$" />
+        <span class="message"></span>
       </div>
       <!--COUNTRY-->
 
       <!--ZIPCODE-->
       <div class="input_wrapper">
         <label for="zipcode">Zipcode:</label>
-        <input type="number" id="zipcode" name="zipcode" min="6" required />
-        <span class="error"></span>
+        <input type="number" id="zipcode" name="zipcode" min="6" />
+        <span class="message"></span>
       </div>
 
       <!--ZIPCODE-->
@@ -49,14 +42,8 @@
       <!--PASSWORD-->
       <div class="input_wrapper">
         <label for="password">Password: </label>
-        <input
-          type="text"
-          id="password"
-          name="password"
-          minlength="6"
-          required
-        />
-        <span class="error"></span>
+        <input type="text" id="password" name="password" minlength="6" />
+        <span class="message"></span>
       </div>
       <!--PASSWORD-->
 
@@ -68,9 +55,8 @@
           id="confirmation_password"
           name="password"
           minlength="6"
-          required
         />
-        <span class="error"></span>
+        <span class="message"></span>
       </div>
       <!--CONFIRMATION PASSWORD-->
       <input type="submit" id="submit_btn" value="Submit" />

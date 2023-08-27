@@ -1,15 +1,9 @@
-/* Want the the form elements to stack in a column on top of one another*/
-
-/*The input fields need different styling when there is an error*/
-
-/*The error message needs to be styled*/
-
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
+} /* This makes the body flex and centers the form */
 
 form {
   display: flex;
@@ -17,7 +11,7 @@ form {
   justify-content: center;
   align-items: center;
   width: 400px;
-}
+} /* This makes the form elements stack on top of one another */
 
 .input_wrapper {
   width: 100%;
@@ -25,3 +19,21 @@ form {
   flex-direction: column;
   margin-bottom: 20px;
 } /* This makes the elements stack on top of one another */
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="number"]:invalid {
+  border: 2px solid red;
+} /* this selects all the input fields of type text, email and number that are invalid and styles them */
+
+.message.invalid_active {
+  background-color: darkred;
+  color: salmon;
+  font-size: 12px;
+} /* This selects the error message and styles it when the above input is invalid */
+
+.message.valid_active {
+  background-color: darkgreen;
+  color: lightgreen;
+  font-size: 12px;
+} /* This selects the error message and styles it when the above input is valid */
