@@ -18,3 +18,10 @@ form {
   align-items: center;
   width: 400px;
 }
+
+.input_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+} /* This makes the elements stack on top of one another */
