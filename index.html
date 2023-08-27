@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form novalidate>
+      <!--EMAIL-->
+      <div class="input_wrapper">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+        />
+        <span class="error"></span>
+      </div>
+      <!--EMAIL-->
+
+      <!--COUNTRY-->
+      <div class="input_wrapper">
+        <label for="country">Country:</label>
+        <input
+          type="text"
+          id="country"
+          name="country"
+          pattern="^[A-Z]{2}$"
+          required
+        />
+        <span class="error"></span>
+      </div>
+      <!--COUNTRY-->
+
+      <!--ZIPCODE-->
+      <div class="input_wrapper">
+        <label for="zipcode">Zipcode:</label>
+        <input type="number" id="zipcode" name="zipcode" min="6" required />
+        <span class="error"></span>
+      </div>
+
+      <!--ZIPCODE-->
+
+      <!--PASSWORD-->
+      <div class="input_wrapper">
+        <label for="password">Password: </label>
+        <input
+          type="text"
+          id="password"
+          name="password"
+          minlength="6"
+          required
+        />
+        <span class="error"></span>
+      </div>
+      <!--PASSWORD-->
+
+      <!--CONFIRMATION PASSWORD-->
+      <div class="input_wrapper">
+        <label for="confirmation_password">Confirmation of Password: </label>
+        <input
+          type="text"
+          id="confirmation_password"
+          name="password"
+          minlength="6"
+          required
+        />
+        <span class="error"></span>
+      </div>
+      <!--CONFIRMATION PASSWORD-->
+      <input type="submit" id="submit_btn" value="Submit" />
+    </form>
+  </body>
+</html>

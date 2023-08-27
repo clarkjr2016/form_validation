@@ -1,0 +1,20 @@
+/* Want the the form elements to stack in a column on top of one another*/
+
+/*The input fields need different styling when there is an error*/
+
+/*The error message needs to be styled*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
